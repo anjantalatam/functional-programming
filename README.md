@@ -1,3 +1,3 @@
 ### Functional Programming
 
-4.Composing and Piping
+5.Currying
