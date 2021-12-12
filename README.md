@@ -1,3 +1,3 @@
 ### Functional Programming
 
-3.Function Composition
+4.Composing and Piping

@@ -4,6 +4,9 @@ const trim = (str) => str.trim();
 const toLowerCase = (str) => str.toLowerCase();
 const wrapInDiv = (str) => `<div>${str}</div>`;
 
-const result = wrapInDiv(toLowerCase(trim(input))); // this is called function composition
+const transform = _.compose(wrapInDiv, toLowerCase, trim);
 
-console.log(result);
+const modifiedText = _.pipe(trim, toLowerCase, wrapInDiv);
+
+console.log(transform(input));
+console.log(modifiedText(input));
